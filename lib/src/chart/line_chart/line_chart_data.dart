@@ -346,8 +346,10 @@ class LineChartBarData with EquatableMixin {
     LineChartStepData? lineChartStepData,
   })  : spots = spots ?? const [],
         show = show ?? true,
-        color =
-            color ?? ((color == null && gradient == null) ? Colors.cyan : null),
+        // color =
+        //     color ?? ((color == null && gradient == null) ? Colors.cyan : null),
+        color = color ??
+            ((color == null && gradient == null) ? Colors.green : null),
         gradient = gradient,
         barWidth = barWidth ?? 2.0,
         isCurved = isCurved ?? false,
